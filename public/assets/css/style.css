@@ -13,6 +13,8 @@ body {
     background-color: var(--sidebar-bg);
     color: var(--text-dark);
     margin: 0;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .text-cyan {
@@ -22,16 +24,18 @@ body {
 /* Sidebar behavior */
 .sidebar {
     width: 280px;
+    flex-shrink: 0;
     background-color: var(--sidebar-bg);
-    min-height: 100vh;
+    height: 100vh;
     padding: 2rem 1.5rem;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .nav-scrollable {
     overflow-y: auto;
-    max-height: 70vh;
+    flex-grow: 1;
 }
 
 /* Custom Scrollbar for Sidebar */

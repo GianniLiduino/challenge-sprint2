@@ -17,12 +17,14 @@
 <body class="d-lg-flex">
 
     <!-- Mobile Header -->
-    <div class="d-lg-none w-100 bg-light p-3 d-flex align-items-center justify-content-between border-bottom sticky-top">
+    <div
+        class="d-lg-none w-100 bg-light p-3 d-flex align-items-center justify-content-between border-bottom sticky-top">
         <div class="d-flex align-items-center gap-2">
             <i class="bi bi-heart-pulse-fill" style="font-size: 1.5rem; color: var(--main-cyan);"></i>
             <span class="fw-bold text-uppercase" style="font-size: 0.8rem; color: #1a567a;">Care Plus Conecta</span>
         </div>
-        <button class="btn border-0 text-cyan" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarOffcanvas">
+        <button class="btn border-0 text-cyan" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#sidebarOffcanvas">
             <i class="bi bi-list fs-2"></i>
         </button>
     </div>
@@ -31,9 +33,10 @@
     <aside class="offcanvas-lg offcanvas-start sidebar" tabindex="-1" id="sidebarOffcanvas">
         <div class="offcanvas-header d-lg-none">
             <h5 class="offcanvas-title text-cyan fw-bold">MENU</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#sidebarOffcanvas"></button>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                data-bs-target="#sidebarOffcanvas"></button>
         </div>
-        
+
         <div class="logo-container d-none d-lg-block">
             <div class="mb-2">
                 <i class="bi bi-heart-pulse-fill" style="font-size: 3rem; color: var(--main-cyan);"></i>
@@ -53,7 +56,7 @@
             <a href="consultas.html" class="nav-link active">
                 <i class="bi bi-calendar-check"></i> Minhas consultas
             </a>
-            <a href="#" class="nav-link">
+            <a href="marketplace.html" class="nav-link">
                 <i class="bi bi-cart"></i> Marketplace
             </a>
             <a href="#" class="nav-link">
@@ -87,16 +90,16 @@
 
     <!-- Main Content Wrapper -->
     <div class="main-content-wrapper shadow-sm">
-        <header class="d-flex flex-column flex-md-row align-items-md-center gap-3">
-            <h1 class="mb-0">Minhas Consultas</h1>
-            
-            <div class="ms-md-auto d-flex align-items-center justify-content-between w-100 w-md-auto">
-                <div class="header-icons me-md-4">
+        <header class="d-flex flex-column flex-md-row align-items-md-center gap-3 sticky-top bg-white z-3">
+            <h1 class="mb-0 text-nowrap">Minhas Consultas</h1>
+
+            <div class="ms-md-auto d-flex align-items-center justify-content-end w-100 w-md-auto">
+                <div class="header-icons me-md-5">
                     <i class="bi bi-bell"></i>
                     <i class="bi bi-gear"></i>
                     <i class="bi bi-search"></i>
                 </div>
-                
+
                 <div class="user-profile">
                     <div class="user-info">
                         <span class="user-name">Manuela Góis</span>
@@ -107,86 +110,106 @@
             </div>
         </header>
 
-        <main class="dashboard-container">
-            <div class="row mb-5 justify-content-center">
+        <main class="dashboard-container" style="padding-top: 1rem !important;">
+            <div class="row mb-3 justify-content-center">
                 <div class="col-12 col-xl-8 text-center">
-                    <p class="fw-bold fs-5" style="line-height: 1.4;">
-                        Controle sua agenda de forma inteligente. Confirme, reagende, libere sua vaga para ganhar pontos ou gerencie sua fila de espera.
+                    <p class="fw-bold" style="line-height: 1.2; font-size: 1.1rem;">
+                        Controle sua agenda de forma inteligente. Confirme, reagende, libere sua vaga para ganhar pontos
+                        ou gerencie sua fila de espera.
                     </p>
                 </div>
             </div>
 
             <div class="consult-list">
                 <!-- Consulta 1 -->
-                <div class="consult-item row align-items-center">
-                    <div class="col-md-2 text-center text-md-start mb-3 mb-md-0">
-                        <img src="https://i.pravatar.cc/150?u=cintia" alt="Dra. Cintia Neves" class="doctor-avatar shadow-sm">
+                <div class="consult-item row align-items-center mb-2 border rounded-4 bg-white shadow-sm p-2 mx-0"
+                    style="margin-bottom: 0.5rem !important;">
+                    <div class="col-md-2 text-center text-md-start mb-2 mb-md-0">
+                        <img src="https://i.pravatar.cc/150?u=cintia" alt="Dra. Cintia Neves"
+                            class="doctor-avatar shadow-sm" style="width: 80px; height: 80px;">
                     </div>
-                    <div class="col-md-6 consult-info text-center text-md-start mb-3 mb-md-0">
-                        <h4 class="h3">Dra. Cintia Neves</h4>
-                        <p class="fs-5">05 Nov, 10:00 (Quarta)</p>
-                        <p class="fs-5">Unidade Vila Olímpia</p>
+                    <div class="col-md-6 consult-info text-center text-md-start mb-2 mb-md-0">
+                        <h4 class="h4 mb-1">Dra. Cintia Neves</h4>
+                        <p class="mb-0">05 Nov, 10:00 (Quarta)</p>
+                        <p class="mb-0">Unidade Vila Olímpia</p>
                     </div>
                     <div class="col-md-4">
-                        <div class="d-flex flex-column align-items-center align-items-md-end">
-                            <button class="btn btn-outline-cyan">Reagendar (C$10)</button>
-                            <button class="btn btn-outline-cyan">Confirmar (C$25)</button>
-                            <button class="btn btn-outline-cyan">Liberar vaga (C$25)</button>
+                        <div class="d-flex flex-column align-items-center align-items-md-end gap-1">
+                            <button class="btn btn-outline-warning py-1" style="font-size: 0.8rem;">Reagendar
+                                (C$10)</button>
+                            <button class="btn btn-outline-success py-1" style="font-size: 0.8rem;">Confirmar
+                                (C$25)</button>
+                            <button class="btn btn-outline-danger py-1" style="font-size: 0.8rem;">Liberar vaga
+                                (C$25)</button>
                         </div>
                     </div>
                 </div>
 
                 <!-- Consulta 2 -->
-                <div class="consult-item row align-items-center">
-                    <div class="col-md-2 text-center text-md-start mb-3 mb-md-0">
-                        <img src="https://i.pravatar.cc/150?u=ricardo" alt="Dr. Ricardo Amaral" class="doctor-avatar shadow-sm">
+                <div class="consult-item row align-items-center mb-2 border rounded-4 bg-white shadow-sm p-2 mx-0"
+                    style="margin-bottom: 0.5rem !important;">
+                    <div class="col-md-2 text-center text-md-start mb-2 mb-md-0">
+                        <img src="https://i.pravatar.cc/150?u=ricardo" alt="Dr. Ricardo Amaral"
+                            class="doctor-avatar shadow-sm" style="width: 80px; height: 80px;">
                     </div>
-                    <div class="col-md-6 consult-info text-center text-md-start mb-3 mb-md-0">
-                        <h4 class="h3">Dr. Ricardo Amaral</h4>
-                        <p class="fs-5">10 Nov, 08:00 (Segunda)</p>
-                        <p class="fs-5">Unidade Vila Olímpia</p>
+                    <div class="col-md-6 consult-info text-center text-md-start mb-2 mb-md-0">
+                        <h4 class="h4 mb-1">Dr. Ricardo Amaral</h4>
+                        <p class="mb-0">10 Nov, 08:00 (Segunda)</p>
+                        <p class="mb-0">Unidade Vila Olímpia</p>
                     </div>
                     <div class="col-md-4">
-                        <div class="d-flex flex-column align-items-center align-items-md-end">
-                            <button class="btn btn-outline-cyan">Reagendar (C$10)</button>
-                            <button class="btn btn-outline-cyan">Confirmar (C$25)</button>
-                            <button class="btn btn-outline-cyan">Liberar vaga (C$25)</button>
+                        <div class="d-flex flex-column align-items-center align-items-md-end gap-1">
+                            <button class="btn btn-outline-warning py-1" style="font-size: 0.8rem;">Reagendar
+                                (C$10)</button>
+                            <button class="btn btn-outline-success py-1" style="font-size: 0.8rem;">Confirmar
+                                (C$25)</button>
+                            <button class="btn btn-outline-danger py-1" style="font-size: 0.8rem;">Liberar vaga
+                                (C$25)</button>
                         </div>
                     </div>
                 </div>
 
                 <!-- Consulta 3 com Alerta -->
-                <div class="consult-item row align-items-center">
-                    <div class="col-md-2 text-center text-md-start mb-3 mb-md-0">
-                        <img src="https://i.pravatar.cc/150?u=flavio" alt="Dr. Flávio Chaves" class="doctor-avatar shadow-sm">
+                <div class="consult-item row align-items-center mb-2 border rounded-4 bg-white shadow-sm p-2 mx-0"
+                    style="margin-bottom: 0.5rem !important;">
+                    <div class="col-md-2 text-center text-md-start mb-2 mb-md-0">
+                        <img src="https://i.pravatar.cc/150?u=flavio" alt="Dr. Flávio Chaves"
+                            class="doctor-avatar shadow-sm" style="width: 80px; height: 80px;">
                     </div>
-                    <div class="col-md-4 consult-info text-center text-md-start mb-3 mb-md-0">
-                        <h4 class="h3">Dr. Flávio Chaves</h4>
-                        <p class="fs-5">12 Nov, 10:00 (Quarta)</p>
-                        <p class="fs-5">Unidade Vila Olímpia</p>
+                    <div class="col-md-4 consult-info text-center text-md-start mb-2 mb-md-0">
+                        <h4 class="h4 mb-1">Dr. Flávio Chaves</h4>
+                        <p class="mb-0">12 Nov, 10:00 (Quarta)</p>
+                        <p class="mb-0">Unidade Vila Olímpia</p>
                     </div>
-                    <div class="col-md-3 mb-3 mb-md-0">
-                        <div class="alert-conflict shadow-sm mx-auto mx-md-0">
-                            <div class="d-flex align-items-center gap-2 mb-2">
-                                <i class="bi bi-exclamation-triangle-fill"></i>
-                                <span class="alert-text text-uppercase">ALERTA: Conflito de agenda para o Dr. Flávio Chaves (12 Nov, 10:00).</span>
+                    <div class="col-md-3 mb-2 mb-md-0">
+                        <div class="alert-conflict shadow-sm mx-auto mx-md-0 p-2 border"
+                            style="max-width: 280px; border-radius: 15px;">
+                            <div class="d-flex align-items-center gap-2 mb-1">
+                                <i class="bi bi-exclamation-triangle-fill" style="font-size: 1rem;"></i>
+                                <span class="alert-text text-uppercase" style="font-size: 0.65rem;">ALERTA: Conflito de
+                                    agenda (12 Nov, 10:00).</span>
                             </div>
-                            <p class="alert-text text-center mb-3">Reunião 'Projeto Alfa' coincide com sua consulta.</p>
-                            <button class="btn btn-cyan w-100 py-2" style="font-size: 0.75rem;">Reagendar para 14 Nov, 14:00 (C$10)</button>
+                            <p class="alert-text text-center mb-2" style="font-size: 0.65rem;">Reunião 'Projeto Alfa'
+                                coincide com consulta.</p>
+                            <button class="btn btn-cyan w-100 py-1" style="font-size: 0.65rem;">Reagendar para 14 Nov,
+                                14:00 (C$10)</button>
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="d-flex flex-column align-items-center align-items-md-end">
-                            <button class="btn btn-outline-cyan">Reagendar (C$10)</button>
-                            <button class="btn btn-outline-cyan">Confirmar (C$25)</button>
-                            <button class="btn btn-outline-cyan">Liberar vaga (C$25)</button>
+                        <div class="d-flex flex-column align-items-center align-items-md-end gap-1">
+                            <button class="btn btn-outline-warning py-1" style="font-size: 0.8rem;">Reagendar
+                                (C$10)</button>
+                            <button class="btn btn-outline-success py-1" style="font-size: 0.8rem;">Confirmar
+                                (C$25)</button>
+                            <button class="btn btn-outline-danger py-1" style="font-size: 0.8rem;">Liberar vaga
+                                (C$25)</button>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- Paginação -->
-            <div class="pagination-container">
+            <div class="pagination-container mt-2">
                 <span>1</span>
                 <span class="text-cyan cursor-pointer">></span>
             </div>

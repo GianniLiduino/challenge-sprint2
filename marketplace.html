@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Care Plus Conecta - Dashboard</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="./public/assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./public/assets/css/style.css">
+</head>
+
+<body class="d-lg-flex">
+
+    <!-- Mobile Header -->
+    <div
+        class="d-lg-none w-100 bg-light p-3 d-flex align-items-center justify-content-between border-bottom sticky-top">
+        <div class="d-flex align-items-center gap-2">
+            <i class="bi bi-heart-pulse-fill" style="font-size: 1.5rem; color: var(--main-cyan);"></i>
+            <span class="fw-bold text-uppercase" style="font-size: 0.8rem; color: #1a567a;">Care Plus Conecta</span>
+        </div>
+        <button class="btn border-0 text-cyan" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#sidebarOffcanvas">
+            <i class="bi bi-list fs-2"></i>
+        </button>
+    </div>
+
+    <!-- Sidebar (Offcanvas on mobile, fixed on desktop) -->
+    <aside class="offcanvas-lg offcanvas-start sidebar" tabindex="-1" id="sidebarOffcanvas">
+        <div class="offcanvas-header d-lg-none">
+            <h5 class="offcanvas-title text-cyan fw-bold">MENU</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                data-bs-target="#sidebarOffcanvas"></button>
+        </div>
+
+        <div class="logo-container d-none d-lg-block">
+            <div class="mb-2">
+                <i class="bi bi-heart-pulse-fill" style="font-size: 3rem; color: var(--main-cyan);"></i>
+            </div>
+            <div class="logo-text text-uppercase">
+                Care Plus<br>Conecta
+            </div>
+        </div>
+
+        <nav class="flex-column nav-scrollable">
+            <a href="index.html" class="nav-link">
+                <i class="bi bi-house-door"></i> Início
+            </a>
+            <a href="#" class="nav-link">
+                <i class="bi bi-person"></i> Meu perfil
+            </a>
+            <a href="consultas.html" class="nav-link">
+                <i class="bi bi-calendar-check"></i> Minhas consultas
+            </a>
+            <a href="marketplace.html" class="nav-link active">
+                <i class="bi bi-cart"></i> Marketplace
+            </a>
+            <a href="#" class="nav-link">
+                <i class="bi bi-wallet2"></i> Minha carteira
+            </a>
+            <a href="#" class="nav-link">
+                <i class="bi bi-calendar-event"></i> Agendamento
+            </a>
+            <a href="#" class="nav-link">
+                <i class="bi bi-list-task"></i> Lista de Espera
+            </a>
+            <a href="#" class="nav-link">
+                <i class="bi bi-people"></i> Comunidade
+            </a>
+            <a href="#" class="nav-link">
+                <i class="bi bi-bell"></i> Notificações
+            </a>
+            <a href="#" class="nav-link">
+                <i class="bi bi-gear"></i> Configurações
+            </a>
+            <a href="#" class="nav-link">
+                <i class="bi bi-activity"></i> Hábitos Ativos
+            </a>
+        </nav>
+
+        <footer class="sidebar-footer px-2 mt-auto pt-4">
+            <a href="#">Sobre nós</a>
+            <a href="#">Contato</a>
+        </footer>
+    </aside>
+
+    <!-- Main Content Wrapper -->
+    <div class="main-content-wrapper shadow-sm">
+        <header class="d-flex flex-column flex-md-row align-items-md-center gap-3 sticky-top bg-white z-3">
+            <h1 class="mb-0">Marketplace</h1>
+
+            <div class="ms-md-auto d-flex align-items-center justify-content-end w-100 w-md-auto">
+                <div class="header-icons me-md-5">
+                    <i class="bi bi-bell"></i>
+                    <i class="bi bi-gear"></i>
+                    <i class="bi bi-search"></i>
+                </div>
+
+                <div class="user-profile">
+                    <div class="user-info">
+                        <span class="user-name">Manuela Góis</span>
+                        <span class="user-balance">Saldo: 785 CP</span>
+                    </div>
+                    <img src="https://i.pravatar.cc/150?u=manuela" alt="Manuela Góis" class="user-avatar">
+                </div>
+            </div>
+        </header>
+
+        <main class="dashboard-container">
+            <div class="row mb-4 justify-content-center">
+                <div class="col-12 col-xl-10 text-center">
+                    <p class="fw-bold fs-5" style="line-height: 1.4;">
+                        Seu compromisso com a saúde vale recompensas. Use seus CarePoints para resgatar benefícios
+                        exclusivos em bem-estar, descontos e serviços.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Filtros -->
+            <div class="d-flex flex-wrap justify-content-center gap-2 mb-4">
+                <span class="badge rounded-pill p-2 px-3" style="background-color: var(--main-cyan) !important;">todos
+                    <i class="bi bi-x-lg ms-1"></i></span>
+                <span class="badge rounded-pill p-2 px-3" style="background-color: var(--main-cyan) !important;">saúde
+                    <i class="bi bi-x-lg ms-1"></i></span>
+                <span class="badge rounded-pill p-2 px-3"
+                    style="background-color: var(--main-cyan) !important;">bem-estar <i
+                        class="bi bi-x-lg ms-1"></i></span>
+                <span class="badge rounded-pill p-2 px-3" style="background-color: var(--main-cyan) !important;">exames
+                    <i class="bi bi-x-lg ms-1"></i></span>
+                <span class="badge rounded-pill p-2 px-3"
+                    style="background-color: var(--main-cyan) !important;">alimentação <i
+                        class="bi bi-x-lg ms-1"></i></span>
+                <span class="badge rounded-pill p-2 px-3"
+                    style="background-color: var(--main-cyan) !important;">esportes <i
+                        class="bi bi-x-lg ms-1"></i></span>
+            </div>
+
+            <!-- Grid de Recompensas -->
+            <div class="row g-4">
+                <!-- Farmácias -->
+                <div class="col-md-6">
+                    <div class="d-flex align-items-center gap-3 p-3 border rounded-4 bg-white shadow-sm">
+                        <div class="bg-light rounded-circle p-3 d-flex align-items-center justify-content-center"
+                            style="width: 100px; height: 100px; flex-shrink: 0;">
+                            <i class="bi bi-capsule text-cyan fs-1"></i>
+                        </div>
+                        <div>
+                            <h5 class="text-cyan fw-bold mb-1">Farmácias</h5>
+                            <p class="mb-1 small">Desconto nos medicamentos (20% off)</p>
+                            <p class="text-cyan fw-bold mb-1">Custo: 300 C$</p>
+                            <a href="#" class="text-muted small text-decoration-none">Ver todos os parceiros</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Comidas Saudáveis -->
+                <div class="col-md-6">
+                    <div class="d-flex align-items-center gap-3 p-3 border rounded-4 bg-white shadow-sm">
+                        <div class="bg-light rounded-circle p-3 d-flex align-items-center justify-content-center"
+                            style="width: 100px; height: 100px; flex-shrink: 0;">
+                            <i class="bi bi-egg-fried text-cyan fs-1"></i>
+                        </div>
+                        <div>
+                            <h5 class="text-cyan fw-bold mb-1">Comidas Saudáveis</h5>
+                            <p class="mb-1 small">Desconto no valor da consulta (20% off)</p>
+                            <p class="text-cyan fw-bold mb-1">Custo: 200 C$</p>
+                            <a href="#" class="text-muted small text-decoration-none">Ver todos os parceiros</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Nutricionista -->
+                <div class="col-md-6">
+                    <div class="d-flex align-items-center gap-3 p-3 border rounded-4 bg-white shadow-sm">
+                        <div class="bg-light rounded-circle p-3 d-flex align-items-center justify-content-center"
+                            style="width: 100px; height: 100px; flex-shrink: 0;">
+                            <i class="bi bi-apple text-cyan fs-1"></i>
+                        </div>
+                        <div>
+                            <h5 class="text-cyan fw-bold mb-1">Nutricionista</h5>
+                            <p class="mb-1 small">Desconto no valor da consulta (15% off)</p>
+                            <p class="text-cyan fw-bold mb-1">Custo: 200 C$</p>
+                            <a href="#" class="text-muted small text-decoration-none">Ver todos os parceiros</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Corridas -->
+                <div class="col-md-6">
+                    <div class="d-flex align-items-center gap-3 p-3 border rounded-4 bg-white shadow-sm">
+                        <div class="bg-light rounded-circle p-3 d-flex align-items-center justify-content-center"
+                            style="width: 100px; height: 100px; flex-shrink: 0;">
+                            <i class="bi bi-person-walking text-cyan fs-1"></i>
+                        </div>
+                        <div>
+                            <h5 class="text-cyan fw-bold mb-1">Corridas</h5>
+                            <p class="mb-1 small">Desconto no valor da inscrição (20% off)</p>
+                            <p class="text-cyan fw-bold mb-1">Custo: 350 C$</p>
+                            <a href="#" class="text-muted small text-decoration-none">Ver todos os parceiros</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Academias -->
+                <div class="col-md-6">
+                    <div class="d-flex align-items-center gap-3 p-3 border rounded-4 bg-white shadow-sm">
+                        <div class="bg-light rounded-circle p-3 d-flex align-items-center justify-content-center"
+                            style="width: 100px; height: 100px; flex-shrink: 0;">
+                            <i class="bi bi-universal-access text-cyan fs-1"></i>
+                        </div>
+                        <div>
+                            <h5 class="text-cyan fw-bold mb-1">Academias</h5>
+                            <p class="mb-1 small">Desconto no valor da mensalidade (15% off)</p>
+                            <p class="text-cyan fw-bold mb-1">Custo: 500 C$</p>
+                            <a href="#" class="text-muted small text-decoration-none">Ver todos os parceiros</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Assessoria Esportiva -->
+                <div class="col-md-6">
+                    <div class="d-flex align-items-center gap-3 p-3 border rounded-4 bg-white shadow-sm">
+                        <div class="bg-light rounded-circle p-3 d-flex align-items-center justify-content-center"
+                            style="width: 100px; height: 100px; flex-shrink: 0;">
+                            <i class="bi bi-people text-cyan fs-1"></i>
+                        </div>
+                        <div>
+                            <h5 class="text-cyan fw-bold mb-1">Assessoria Esportiva</h5>
+                            <p class="mb-1 small">Desconto no valor da mensalidade (15% off)</p>
+                            <p class="text-cyan fw-bold mb-1">Custo: 500 C$</p>
+                            <a href="#" class="text-muted small text-decoration-none">Ver todos os parceiros</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paginação -->
+            <div class="pagination-container mt-4">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span class="text-cyan cursor-pointer">></span>
+                <span class="text-cyan cursor-pointer">>></span>
+            </div>
+        </main>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
