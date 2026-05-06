@@ -13,12 +13,40 @@ body {
     background-color: var(--sidebar-bg);
     color: var(--text-dark);
     margin: 0;
-    height: 100vh;
-    overflow: hidden;
+}
+
+@media (min-width: 992px) {
+    body {
+        height: 100vh;
+        overflow: hidden;
+    }
 }
 
 .text-cyan {
     color: var(--main-cyan) !important;
+}
+
+.text-brand-dark {
+    color: #1a567a !important;
+}
+
+.bg-cyan {
+    background-color: var(--main-cyan) !important;
+    color: white !important;
+}
+
+.avatar-80 {
+    width: 80px !important;
+    height: 80px !important;
+}
+
+.icon-box-100 {
+    width: 100px !important;
+    height: 100px !important;
+}
+
+.text-xs {
+    font-size: 0.65rem !important;
 }
 
 /* Sidebar behavior */
