@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Care Plus Conecta - Dashboard</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/public/assets/css/style.css">
+    <link rel="stylesheet" href="/public/assets/css/agendamento.css">
+</head>
+
+<body class="d-lg-flex">
+
+    <!-- Mobile Header -->
+    <div class="d-lg-none w-100 bg-light p-3 d-flex align-items-center justify-content-between border-bottom sticky-top">
+        <div class="d-flex align-items-center gap-2">
+            <i class="bi bi-heart-pulse-fill" style="font-size: 1.5rem; color: var(--main-cyan);"></i>
+            <span class="fw-bold text-uppercase" style="font-size: 0.8rem; color: #1a567a;">Care Plus Conecta</span>
+        </div>
+        <button class="btn border-0 text-cyan" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarOffcanvas">
+            <i class="bi bi-list fs-2"></i>
+        </button>
+    </div>
+
+    <!-- Sidebar (Offcanvas on mobile, fixed on desktop) -->
+    <aside class="offcanvas-lg offcanvas-start sidebar" tabindex="-1" id="sidebarOffcanvas">
+        <div class="offcanvas-header d-lg-none">
+            <h5 class="offcanvas-title text-cyan fw-bold">MENU</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#sidebarOffcanvas"></button>
+        </div>
+        
+        <div class="logo-container d-none d-lg-block">
+            <div class="mb-2">
+                <i class="bi bi-heart-pulse-fill" style="font-size: 3rem; color: var(--main-cyan);"></i>
+            </div>
+            <div class="logo-text text-uppercase">
+                Care Plus<br>Conecta
+            </div>
+        </div>
+
+        <nav class="flex-column nav-scrollable">
+            <a href="#" class="nav-link">
+                <i class="bi bi-house-door"></i> Início
+            </a>
+            <a href="#" class="nav-link">
+                <i class="bi bi-person"></i> Meu perfil
+            </a>
+            <a href="#" class="nav-link">
+                <i class="bi bi-calendar-check"></i> Minhas consultas
+            </a>
+            <a href="#" class="nav-link">
+                <i class="bi bi-cart"></i> Marketplace
+            </a>
+            <a href="minha-carteira.html" class="nav-link">
+                <i class="bi bi-wallet2"></i> Minha carteira
+            </a>
+            <a href="agendamento.html" class="nav-link active">
+                <i class="bi bi-calendar-event"></i> Agendamento
+            </a>
+            <a href="#" class="nav-link">
+                <i class="bi bi-list-task"></i> Lista de Espera
+            </a>
+            <a href="#" class="nav-link">
+                <i class="bi bi-people"></i> Comunidade
+            </a>
+            <a href="#" class="nav-link">
+                <i class="bi bi-bell"></i> Notificações
+            </a>
+            <a href="#" class="nav-link">
+                <i class="bi bi-gear"></i> Configurações
+            </a>
+            <a href="#" class="nav-link">
+                <i class="bi bi-activity"></i> Hábitos Ativos
+            </a>
+        </nav>
+
+        <footer class="sidebar-footer px-2 mt-auto pt-4">
+            <a href="#">Sobre nós</a>
+            <a href="#">Contato</a>
+        </footer>
+    </aside>
+
+    <!-- Main Content Wrapper -->
+    <div class="main-content-wrapper shadow-sm">
+        <header class="d-flex flex-column flex-md-row align-items-md-center gap-3">
+            <h1 class="mb-0">Agendamento</h1>
+            
+            <div class="ms-md-auto d-flex align-items-center justify-content-between w-50    w-md-auto">
+                <div class="header-icons me-md-4">
+                    <i class="bi bi-bell"></i>
+                    <i class="bi bi-gear"></i>
+                    <i class="bi bi-search"></i>
+                </div>
+                
+                <div class="user-profile">
+                    <div class="user-info">
+                        <span class="user-name">Manuela Góis</span>
+                        <span class="user-balance">Saldo: 785 CP</span>
+                    </div>
+                    <img src="https://i.pravatar.cc/150?u=manuela" alt="Manuela Góis" class="user-avatar">
+                </div>
+            </div>
+        </header>
+
+        <main class="dashboard-container schedule-container">
+
+    <section class="schedule-hero">
+
+        <div class="search-doctor">
+            <i class="bi bi-search"></i>
+            <input type="text" placeholder="Especialidade ou nome do médico">
+        </div>
+
+        <div class="schedule-top">
+            <span>Agende Sua Consulta</span>
+            <span>Novembro</span>
+        </div>
+
+        <div class="date-selector">
+            <button class="arrow-btn">
+                <i class="bi bi-chevron-left"></i>
+            </button>
+
+            <button class="date-card">
+                <strong>04</strong>
+                <span>TER</span>
+            </button>
+
+            <button class="date-card">
+                <strong>05</strong>
+                <span>QUA</span>
+            </button>
+
+            <button class="date-card active">
+                <strong>06</strong>
+                <span>QUI</span>
+            </button>
+
+            <button class="date-card">
+                <strong>07</strong>
+                <span>SEX</span>
+            </button>
+
+            <button class="date-card">
+                <strong>08</strong>
+                <span>SAB</span>
+            </button>
+
+            <button class="date-card">
+                <strong>09</strong>
+                <span>DOM</span>
+            </button>
+
+            <button class="arrow-btn">
+                <i class="bi bi-chevron-right"></i>
+            </button>
+        </div>
+
+    </section>
+
+    <section class="schedule-content">
+
+        <h2>Selecione a Unidade</h2>
+
+        <div class="unit-options">
+            <button>Paulista</button>
+            <button class="active">Vila Olímpia</button>
+            <button>Morumbi</button>
+            <button>Campo Belo</button>
+            <button>Alphaville</button>
+        </div>
+
+        <h2>Horários disponíveis</h2>
+
+        <div class="time-options">
+            <button>09:00</button>
+            <button>09:30</button>
+            <button class="active">10:00</button>
+            <button>10:30</button>
+            <button>11:00</button>
+            <button>11:30</button>
+            <button>12:00</button>
+            <button>12:30</button>
+            <button>13:00</button>
+            <button>13:30</button>
+            <button>14:00</button>
+            <button>14:30</button>
+            <button>15:00</button>
+            <button>15:30</button>
+            <button>16:00</button>
+        </div>
+
+        <button class="confirm-schedule">
+            Clique aqui para confirmar<br>
+            e ganhar 25C$!
+        </button>
+
+    </section>
+
+</main>
+
+                        
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
