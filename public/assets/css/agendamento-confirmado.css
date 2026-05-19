@@ -1,0 +1,27 @@
+.summary-box {
+    border: 2px solid var(--main-cyan, #0dcaf0);
+    border-radius: 20px;
+}
+
+.summary-list li {
+    position: relative;
+    padding-left: 25px;
+    color: #1a567a;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.summary-list li::before {
+    content: "•";
+    color: var(--main-cyan, #0dcaf0);
+    position: absolute;
+    left: 0;
+    top: -5px;
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+.summary-list .underline-cyan {
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(13, 202, 240, 0.4);
+}
