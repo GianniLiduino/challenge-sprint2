@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Care Plus Conecta - Comunidade</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./public/assets/css/comunidade.css">
+</head>
+
+<body class="d-lg-flex">
+
+    <div class="d-lg-none w-100 bg-light p-3 d-flex align-items-center justify-content-between border-bottom sticky-top">
+        <div class="d-flex align-items-center gap-2">
+            <i class="bi bi-heart-pulse-fill fs-4 text-cyan"></i>
+            <span class="fw-bold text-uppercase small text-brand-dark">Care Plus Conecta</span>
+        </div>
+        <button class="btn border-0 text-cyan" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarOffcanvas">
+            <i class="bi bi-list fs-2"></i>
+        </button>
+    </div>
+
+    <aside class="offcanvas-lg offcanvas-start sidebar" tabindex="-1" id="sidebarOffcanvas">
+        <div class="offcanvas-header d-lg-none">
+            <h5 class="offcanvas-title text-cyan fw-bold">MENU</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#sidebarOffcanvas"></button>
+        </div>
+
+        <div class="logo-container d-none d-lg-block">
+            <div class="mb-2">
+                <i class="bi bi-heart-pulse-fill display-5 text-cyan"></i>
+            </div>
+            <div class="logo-text text-uppercase">
+                Care Plus<br>Conecta
+            </div>
+        </div>
+
+        <nav class="flex-column nav-scrollable">
+            <a href="index.html" class="nav-link">
+                <i class="bi bi-house-door"></i> Início
+            </a>
+            
+            <a href="consultas.html" class="nav-link">
+                <i class="bi bi-calendar-check"></i> Minhas consultas
+            </a>
+            <a href="marketplace.html" class="nav-link">
+                <i class="bi bi-cart"></i> Marketplace
+            </a>
+            <a href="minha-carteira.html" class="nav-link">
+                <i class="bi bi-wallet2"></i> Minha carteira
+            </a>
+            <a href="agendamento.html" class="nav-link">
+                <i class="bi bi-calendar-event"></i> Agendamento
+            </a>
+            <a href="lista-de-espera.html" class="nav-link">
+                <i class="bi bi-list-task"></i> Lista de Espera
+            </a>
+            <a href="comunidade.html" class="nav-link active">
+                <i class="bi bi-people"></i> Comunidade
+            </a>
+            <a href="notificacoes.html" class="nav-link">
+                <i class="bi bi-bell"></i> Notificações
+            </a>
+            <a href="#" class="nav-link">
+                <i class="bi bi-gear"></i> Configurações
+            </a>
+            <a href="habitos-ativos.html" class="nav-link">
+                <i class="bi bi-activity"></i> Hábitos Ativos
+            </a>
+        </nav>
+
+        <footer class="sidebar-footer px-2 mt-auto pt-4">
+            <a href="#">Sobre nós</a>
+            <a href="#">Contato</a>
+        </footer>
+    </aside>
+
+    <div class="main-content-wrapper shadow-sm">
+        <header class="d-flex flex-column flex-md-row align-items-md-center gap-3 sticky-top bg-white z-3">
+            <h1 class="mb-0 text-cyan fw-bold">Comunidade</h1>
+
+            <div class="ms-md-auto d-flex align-items-center justify-content-end w-100 w-md-auto">
+                <div class="header-icons me-md-5 d-flex gap-2 align-items-center">
+    
+    <div class="dropdown">
+        <div class="nav-icon-wrapper d-flex justify-content-center align-items-center dropdown-toggle-no-caret" 
+             id="notificationDropdown" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" role="button">
+            <i class="bi bi-bell"></i>
+        </div>
+        
+        <div class="dropdown-menu dropdown-menu-end notification-menu shadow-none border-0 p-0 bg-transparent" aria-labelledby="notificationDropdown">
+            <div class="d-flex flex-column gap-2">
+                
+                <div class="notification-item">
+                    <button type="button" class="btn-close notification-close" aria-label="Close"></button>
+                    <div class="d-flex gap-3 align-items-start">
+                        <i class="bi bi-lightning-fill fs-3 text-danger"></i>
+                        <div class="w-100 mt-1">
+                            <div class="d-flex justify-content-between align-items-center mb-1 pe-4">
+                                <h6 class="mb-0 fw-bold fs-6 text-dark">Flash Accept! <span class="text-danger fw-normal" style="font-size: 0.8rem;">(expira em 4:52min)</span></h6>
+                                <small class="text-muted" style="font-size: 0.7rem;">10 minutos atrás</small>
+                            </div>
+                            <p class="mb-0 text-dark fw-bold" style="font-size: 0.85rem;">Vaga com Dra. Cintia Neves HOJE às 14:00 (Vila Olímpia).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="notification-item">
+                    <button type="button" class="btn-close notification-close" aria-label="Close"></button>
+                    <div class="d-flex gap-3 align-items-start">
+                        <i class="bi bi-exclamation-triangle-fill fs-3 text-danger"></i>
+                        <div class="w-100 mt-1">
+                            <div class="d-flex justify-content-between align-items-center mb-1 pe-4">
+                                <h6 class="mb-0 fw-bold fs-6 text-dark">Alerta! Conflito de agenda!</h6>
+                                <small class="text-muted" style="font-size: 0.7rem;">1 dia atrás</small>
+                            </div>
+                            <p class="mb-0 text-dark fw-bold" style="font-size: 0.85rem;">Sua consulta com Dr. Flávio está marcada para o mesmo dia da reunião "Projeto Alfa".</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="notification-item">
+                    <button type="button" class="btn-close notification-close" aria-label="Close"></button>
+                    <div class="d-flex gap-3 align-items-start">
+                        <i class="bi bi-currency-dollar fs-2 text-cyan"></i>
+                        <div class="w-100 mt-1">
+                            <div class="d-flex justify-content-between align-items-center mb-1 pe-4">
+                                <h6 class="mb-0 fw-bold fs-6 text-dark">CareCoins creditados!</h6>
+                                <small class="text-muted" style="font-size: 0.7rem;">5 dias atrás</small>
+                            </div>
+                            <p class="mb-0 text-dark fw-bold" style="font-size: 0.85rem;">Você ganhou +100 CareCoins pelo comparecimento à consulta de ontem. Saldo atual: 785 Pts.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="text-end mt-2 me-2">
+                <a href="notificacoes.html" class="text-cyan text-decoration-none small">Ver todas as notificações</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="nav-icon-wrapper d-flex justify-content-center align-items-center"><i class="bi bi-gear"></i></div>
+    <div class="nav-icon-wrapper d-flex justify-content-center align-items-center"><i class="bi bi-search"></i></div>
+</div>
+
+                <div class="user-profile">
+                    <div class="user-info">
+                        <span class="user-name">Manuela Góis</span>
+                        <span class="user-balance">Saldo: 785 CP</span>
+                    </div>
+                    <img src="https://i.pravatar.cc/150?u=manuela" alt="Manuela Góis" class="user-avatar">
+                </div>
+            </div>
+        </header>
+
+        <main class="dashboard-container d-flex justify-content-center pt-4">
+            <div class="w-100" style="max-width: 800px;">
+                
+                <div class="d-flex flex-column flex-md-row gap-4 align-items-center align-items-md-start justify-content-center mb-4">
+                    <div class="comunidade-box p-3 pe-md-5 w-100 flex-grow-1">
+                        <h5 class="text-cyan fw-bold mb-3 d-flex align-items-center gap-2">
+                            <i class="bi bi-person-fill fs-4"></i> Meu perfil
+                        </h5>
+                        <div class="d-flex align-items-center gap-3">
+                            <img src="https://i.pravatar.cc/150?u=manuela" alt="Manuela" class="rounded-circle shadow-sm" style="width: 75px; height: 75px; object-fit: cover;">
+                            <div>
+                                <h6 class="fw-bold text-dark mb-2 fs-6">Manuela Góis - 785 Care Points</h6>
+                                <div class="text-dark fw-bold small d-flex align-items-center gap-2">
+                                    <span>45 seguidores</span> 
+                                    <div class="border-start border-dark border-2" style="height: 15px;"></div> 
+                                    <span>32 seguindo</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex flex-column gap-3 mt-md-2" style="min-width: 200px;">
+                        <button class="btn btn-outline-cyan-rounded py-2 px-4 w-100">Ver meu progresso</button>
+                        <button class="btn btn-outline-cyan-rounded py-2 px-4 w-100">Convidar amigos</button>
+                    </div>
+                </div>
+
+                <div class="bg-cyan w-100 mb-4 mx-auto" style="height: 1.5px; opacity: 0.6;"></div>
+
+                <div class="comunidade-box p-4 mb-4 mx-auto">
+                    <h5 class="text-cyan fw-bold mb-4 d-flex align-items-center gap-2">
+                        <i class="bi bi-graph-up-arrow fs-4"></i> Ranking semanal da Comunidade
+                    </h5>
+                    <ul class="list-unstyled mb-3 fw-bold text-dark ms-2 ms-md-4" style="font-size: 0.95rem;">
+                        <li class="mb-3 d-flex align-items-center gap-3">
+                            <i class="bi bi-award-fill text-dark fs-5"></i> Carlos Oliveira - 1.115 CP (+150 esta semana)
+                        </li>
+                        <li class="mb-3 d-flex align-items-center gap-3">
+                            <i class="bi bi-award text-dark fs-5"></i> Ana Costa - 870 CP (+120 esta semana)
+                        </li>
+                        <li class="mb-3 d-flex align-items-center gap-3">
+                            <i class="bi bi-person-badge text-dark fs-5"></i> Você - 785 CP (+75 esta semana)
+                        </li>
+                    </ul>
+                    <a href="#" class="text-cyan text-decoration-none fw-bold ms-2 ms-md-4" style="font-size: 0.9rem;">Ver ranking completo</a>
+                </div>
+
+                <div class="bg-cyan w-100 mb-5 mx-auto" style="height: 1.5px; opacity: 0.6;"></div>
+
+                <h4 class="text-cyan text-center fw-bold mb-5">Feed da Comunidade</h4>
+                
+                <div class="d-flex flex-column gap-4 pb-5 mx-auto" style="max-width: 650px;">
+                    <article class="d-flex flex-column flex-sm-row align-items-start gap-3 w-100">
+                        <img src="https://i.pravatar.cc/150?u=ana" alt="Ana" class="rounded-circle mt-1" style="width: 70px; height: 70px; object-fit: cover;">
+                        <div class="w-100">
+                            <div class="d-flex align-items-center gap-2 mb-1">
+                                <i class="bi bi-award text-cyan fs-5"></i>
+                                <h6 class="mb-0 fw-bold text-dark text-uppercase fs-6">CONQUISTA DESBLOQUEADA!</h6>
+                            </div>
+                            <p class="mb-2 text-dark fw-bold small" style="font-size: 0.9rem;">Ana Costa acabou de ganhar a medalha "Consulta Pontual"</p>
+                            <div class="d-flex gap-4 fw-bold" style="font-size: 0.85rem;">
+                                <span><i class="bi bi-star-fill text-cyan me-1"></i> 12 curtidas</span>
+                                <span><i class="bi bi-chat-left-text-fill text-cyan me-1"></i> 3 comentários</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="d-flex flex-column flex-sm-row align-items-start gap-3 w-100 mt-2">
+                        <img src="https://i.pravatar.cc/150?u=pedro" alt="Pedro" class="rounded-circle mt-1" style="width: 70px; height: 70px; object-fit: cover;">
+                        <div class="w-100">
+                            <div class="d-flex align-items-center gap-2 mb-1">
+                                <i class="bi bi-arrow-up-right-circle text-cyan fs-5"></i>
+                                <h6 class="mb-0 fw-bold text-dark text-uppercase fs-6">PROGRESSO SEMANAL!</h6>
+                            </div>
+                            <p class="mb-2 text-dark fw-bold small" style="font-size: 0.9rem;">Pedro Santos completou 4 consultas esta semana!</p>
+                            <div class="d-flex gap-4 fw-bold" style="font-size: 0.85rem;">
+                                <span><i class="bi bi-star-fill text-cyan me-1"></i> 8 curtidas</span>
+                                <span><i class="bi bi-chat-left-text-fill text-cyan me-1"></i> 1 comentário</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="d-flex flex-column flex-sm-row align-items-start gap-3 w-100 mt-2">
+                        <img src="https://i.pravatar.cc/150?u=amina" alt="Amina" class="rounded-circle mt-1" style="width: 70px; height: 70px; object-fit: cover;">
+                        <div class="w-100">
+                            <div class="d-flex align-items-center gap-2 mb-1">
+                                <i class="bi bi-plus-circle text-cyan fs-5"></i>
+                                <h6 class="mb-0 fw-bold text-dark text-uppercase fs-6">RECOMPENSA RESGATADA!</h6>
+                            </div>
+                            <p class="mb-2 text-dark fw-bold small" style="font-size: 0.9rem;">Amina Al-Farsi trocou 500CP por descontos em exames!</p>
+                            <div class="d-flex gap-4 fw-bold" style="font-size: 0.85rem;">
+                                <span><i class="bi bi-star-fill text-cyan me-1"></i> 16 curtidas</span>
+                                <span><i class="bi bi-chat-left-text-fill text-cyan me-1"></i> 6 comentários</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const closeButtons = document.querySelectorAll('.notification-close');
+        
+        closeButtons.forEach(button => {
+            button.addEventListener('click', function(e) {
+                
+                e.stopPropagation();                 
+                
+                const notificationItem = this.closest('.notification-item');
+                if (notificationItem) {
+                    notificationItem.style.opacity = '0';
+                    setTimeout(() => {
+                        notificationItem.remove();
+                    }, 300); 
+                }
+            });
+        });
+    });
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+.waitlist-banner {
+    background-color: #a7e7e5;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+}
+
+.status-box {
+    border: 1px solid #1a567a;
+    border-radius: 12px;
+    color: #1a567a;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.outline-btn {
+    border: 1px solid #cdd5d9;
+    background-color: #fff;
+}
+
+.custom-checkboxes .form-check-input {
+    width: 1.4rem;
+    height: 1.4rem;
+    border: 2px solid #5a5a5a;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 0;
+}
+
+.custom-checkboxes .form-check-input:checked {
+    background-color: var(--main-cyan, #0dcaf0);
+    border-color: var(--main-cyan, #0dcaf0);
+}
+
+.custom-checkboxes label {
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+@media (min-width: 992px) {
+    .waitlist-banner {
+        margin-left: -2.5rem;
+        margin-right: -2.5rem;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+}

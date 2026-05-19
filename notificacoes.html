@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Care Plus Conecta - Notificações</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./public/assets/css/style.css">
+</head>
+
+<body class="d-lg-flex">
+
+    <div class="d-lg-none w-100 bg-light p-3 d-flex align-items-center justify-content-between border-bottom sticky-top">
+        <div class="d-flex align-items-center gap-2">
+            <i class="bi bi-heart-pulse-fill fs-4 text-cyan"></i>
+            <span class="fw-bold text-uppercase small text-brand-dark">Care Plus Conecta</span>
+        </div>
+        <button class="btn border-0 text-cyan" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarOffcanvas">
+            <i class="bi bi-list fs-2"></i>
+        </button>
+    </div>
+
+    <aside class="offcanvas-lg offcanvas-start sidebar" tabindex="-1" id="sidebarOffcanvas">
+        <div class="offcanvas-header d-lg-none">
+            <h5 class="offcanvas-title text-cyan fw-bold">MENU</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#sidebarOffcanvas"></button>
+        </div>
+
+        <div class="logo-container d-none d-lg-block">
+            <div class="mb-2">
+                <i class="bi bi-heart-pulse-fill display-5 text-cyan"></i>
+            </div>
+            <div class="logo-text text-uppercase">
+                Care Plus<br>Conecta
+            </div>
+        </div>
+
+        <nav class="flex-column nav-scrollable">
+            <a href="index.html" class="nav-link">
+                <i class="bi bi-house-door"></i> Início
+            </a>
+            
+            <a href="consultas.html" class="nav-link">
+                <i class="bi bi-calendar-check"></i> Minhas consultas
+            </a>
+            <a href="marketplace.html" class="nav-link">
+                <i class="bi bi-cart"></i> Marketplace
+            </a>
+            <a href="minha-carteira.html" class="nav-link">
+                <i class="bi bi-wallet2"></i> Minha carteira
+            </a>
+            <a href="agendamento.html" class="nav-link">
+                <i class="bi bi-calendar-event"></i> Agendamento
+            </a>
+            <a href="lista-de-espera.html" class="nav-link">
+                <i class="bi bi-list-task"></i> Lista de Espera
+            </a>
+            <a href="comunidade.html" class="nav-link">
+                <i class="bi bi-people"></i> Comunidade
+            </a>
+            <a href="notificacoes.html" class="nav-link active">
+                <i class="bi bi-bell"></i> Notificações
+            </a>
+            <a href="#" class="nav-link">
+                <i class="bi bi-gear"></i> Configurações
+            </a>
+            <a href="habitos-ativos.html" class="nav-link">
+                <i class="bi bi-activity"></i> Hábitos Ativos
+            </a>
+        </nav>
+
+        <footer class="sidebar-footer px-2 mt-auto pt-4">
+            <a href="#">Sobre nós</a>
+            <a href="#">Contato</a>
+        </footer>
+    </aside>
+
+    <div class="main-content-wrapper shadow-sm">
+        <header class="d-flex flex-column flex-md-row align-items-md-center gap-3 sticky-top bg-white z-3">
+            <h1 class="mb-0">Notificações</h1>
+
+            <div class="ms-md-auto d-flex align-items-center justify-content-end w-100 w-md-auto">
+                <div class="header-icons me-md-5">
+                    <i class="bi bi-bell"></i>
+                    <i class="bi bi-gear"></i>
+                    <i class="bi bi-search"></i>
+                </div>
+
+                <div class="user-profile">
+                    <div class="user-info">
+                        <span class="user-name">Manuela Góis</span>
+                        <span class="user-balance">Saldo: 785 CP</span>
+                    </div>
+                    <img src="https://i.pravatar.cc/150?u=manuela" alt="Manuela Góis" class="user-avatar">
+                </div>
+            </div>
+        </header>
+
+        <main class="dashboard-container">
+            <section class="filters mb-4 d-flex align-items-center gap-2 flex-wrap">
+                <span class="fw-bold text-secondary me-2">Filtro:</span>
+                <div class="d-flex gap-2">
+                    <button class="btn btn-cyan rounded-pill btn-sm px-3 active-filter d-inline-block text-nowrap" style="width: auto;">Não lidas</button>
+                    <button class="btn btn-outline-cyan rounded-pill btn-sm px-3 d-inline-block text-nowrap" style="width: auto;">IA</button>
+                    <button class="btn btn-outline-cyan rounded-pill btn-sm px-3 d-inline-block text-nowrap" style="width: auto;">Todas</button>
+                </div>
+            </section>
+
+            <section class="notifications-list d-flex flex-column gap-3">
+                
+                <article class="notification-card urgent p-3 border rounded-4 bg-white shadow-sm">
+                    <div class="row align-items-center gy-3">
+                        <div class="col-md-9">
+                            <div class="notification-info">
+                                <h3 class="fs-5 fw-bold mb-2"><i class="bi bi-lightning-charge-fill"></i> Flash Alert!</h3>
+                                <p class="mb-1 text-secondary">Vaga com Dra. Carla Neves hoje às 14h00, Vila Olímpia.</p>
+                                <small class="text-danger fw-semibold">Expira em 03 minutos e 39 segundos</small>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="d-flex flex-column align-items-stretch align-items-md-end gap-2">
+                                <button class="btn btn-success py-1 btn-sm">Aceitar (+25CP)</button>
+                                <button class="btn btn-outline-danger py-1 btn-sm">Recusar</button>
+                                <div class="d-flex gap-2 justify-content-md-end mt-1 small">
+                                    <a href="#" class="text-muted text-decoration-none">Arquivar</a>
+                                    <span class="text-muted">|</span>
+                                    <a href="#" class="text-muted text-decoration-none">Excluir</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="notification-card warning p-3 border rounded-4 bg-white shadow-sm">
+                    <div class="row align-items-center gy-3">
+                        <div class="col-md-9">
+                            <div class="notification-info">
+                                <h3 class="fs-5 fw-bold mb-2"><i class="bi bi-exclamation-triangle-fill"></i> Alerta! Conflito de agenda.</h3>
+                                <p class="mb-1 text-secondary">Sua consulta com Dr. Carlos Andrade, 12 Nov, 10h00, coincide com reunião do Projeto Alfa.</p>
+                                <small class="text-muted">20 min atrás</small>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="d-flex flex-column align-items-stretch align-items-md-end gap-2">
+                                <button class="btn btn-warning py-1 btn-sm text-dark">Reagendar (+50CP)</button>
+                                <button class="btn btn-outline-secondary py-1 btn-sm">Ignorar</button>
+                                <div class="d-flex gap-2 justify-content-md-end mt-1 small">
+                                    <a href="#" class="text-muted text-decoration-none">Arquivar</a>
+                                    <span class="text-muted">|</span>
+                                    <a href="#" class="text-muted text-decoration-none">Excluir</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="notification-card success p-3 border rounded-4 bg-white shadow-sm">
+                    <div class="row align-items-center gy-3">
+                        <div class="col-md-9">
+                            <div class="notification-info">
+                                <h3 class="fs-5 fw-bold mb-2"><i class="bi bi-trophy-fill"></i> CheckCoins recebidos!</h3>
+                                <p class="mb-1 text-secondary">Você ganhou +100 CareCoins pelo comparecimento à consulta de ontem.</p>
+                                <small class="text-muted">Ontem, 18h30</small>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="d-flex flex-column align-items-stretch align-items-md-end gap-2">
+                                <button class="btn btn-cyan py-1 btn-sm">Ver carteira</button>
+                                <button class="btn btn-outline-secondary py-1 btn-sm">Ignorar</button>
+                                <div class="d-flex gap-2 justify-content-md-end mt-1 small">
+                                    <a href="#" class="text-muted text-decoration-none">Arquivar</a>
+                                    <span class="text-muted">|</span>
+                                    <a href="#" class="text-muted text-decoration-none">Excluir</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="notification-card info p-3 border rounded-4 bg-white shadow-sm">
+                    <div class="row align-items-center gy-3">
+                        <div class="col-md-9">
+                            <div class="notification-info">
+                                <h3 class="fs-5 fw-bold mb-2"><i class="bi bi-megaphone-fill"></i> Lembrete de consulta próximo!</h3>
+                                <p class="mb-1 text-secondary">Lembrete: Dra. Cláudia Viana, Odontologia, em 05 Nov, 10h00, Vila Olímpia.</p>
+                                <small class="text-muted">Hoje, 09h15</small>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="d-flex flex-column align-items-stretch align-items-md-end gap-2">
+                                <button class="btn btn-outline-success py-1 btn-sm">Confirmar (+25CP)</button>
+                                <button class="btn btn-outline-warning py-1 btn-sm">Reagendar (+50CP)</button>
+                                <button class="btn btn-outline-danger py-1 btn-sm">Liberar vaga (+25CP)</button>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <div class="pagination-container mt-4">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span class="text-cyan cursor-pointer">></span>
+                <span class="text-cyan cursor-pointer">>></span>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

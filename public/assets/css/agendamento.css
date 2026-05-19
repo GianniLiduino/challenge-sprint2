@@ -1,0 +1,210 @@
+/* Página Agendamento */
+
+.schedule-container {
+    padding: 0;
+}
+
+.schedule-hero {
+    background: linear-gradient(180deg, #27d7d4 0%, #02b7c8 100%);
+    padding: 1.5rem 2rem 0.5rem;
+    text-align: center;
+    color: white;
+}
+
+.search-doctor {
+    width: 320px;
+    height: 24px;
+    background: white;
+    border-radius: 50px;
+    margin: 0 auto 1rem;
+    display: flex;
+    align-items: center;
+    padding: 0 0.8rem;
+    color: var(--main-cyan);
+}
+
+.search-doctor input {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--main-cyan);
+}
+
+.search-doctor input::placeholder {
+    color: var(--main-cyan);
+}
+
+.schedule-top {
+    max-width: 430px;
+    margin: 0 auto 0.3rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.date-selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.45rem;
+}
+
+.date-card,
+.arrow-btn {
+    border: 1.5px solid white;
+    background: transparent;
+    color: white;
+    border-radius: 12px;
+}
+
+.date-card {
+    width: 58px;
+    height: 66px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.date-card strong {
+    font-size: 1.35rem;
+    line-height: 1;
+}
+
+.date-card span {
+    font-size: 0.9rem;
+}
+
+.date-card.active {
+    background: white;
+    color: var(--main-cyan);
+}
+
+.arrow-btn {
+    border: none;
+    font-size: 1.6rem;
+}
+
+.schedule-content {
+    text-align: center;
+    padding: 1.5rem 2rem 2rem;
+}
+
+.schedule-content h2 {
+    color: var(--main-cyan);
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+}
+
+.unit-options {
+    max-width: 480px;
+    margin: 0 auto 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.7rem 1.5rem;
+}
+
+.unit-options button,
+.time-options button {
+    border: 1.5px solid var(--main-cyan);
+    background: white;
+    color: #222;
+    font-weight: 700;
+    border-radius: 50px;
+    transition: 0.2s;
+}
+
+.unit-options button {
+    width: 130px;
+    padding: 0.25rem 0;
+    font-size: 0.8rem;
+}
+
+.time-options {
+    max-width: 470px;
+    margin: 0 auto 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.45rem;
+}
+
+.time-options button {
+    padding: 0.45rem 0;
+    background: #eefbff;
+    font-size: 0.85rem;
+}
+
+.unit-options button.active,
+.time-options button.active,
+.unit-options button:hover,
+.time-options button:hover {
+    background: var(--btn-gradient);
+    color: white;
+    border-color: transparent;
+}
+
+.confirm-schedule {
+    border: none;
+    background: var(--btn-gradient);
+    color: white;
+    font-weight: 700;
+    border-radius: 50px;
+    padding: 0.6rem 2.3rem;
+    line-height: 1;
+    box-shadow: 0 4px 12px rgba(59, 199, 215, 0.3);
+}
+
+@media (max-width: 768px) {
+    .schedule-hero {
+        padding: 1.2rem 1rem;
+    }
+
+    .search-doctor {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .date-selector {
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-bottom: 0.5rem;
+    }
+
+    .time-options {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .summary-box {
+        border: 2px solid var(--main-cyan, #0dcaf0);
+        border-radius: 20px;
+    }
+
+    .summary-list li {
+        position: relative;
+        padding-left: 25px;
+        color: #1a567a;
+        font-weight: 500;
+        line-height: 1.4;
+    }
+
+    .summary-list li::before {
+        content: "•";
+        color: var(--main-cyan, #0dcaf0);
+        position: absolute;
+        left: 0;
+        top: -5px;
+        font-size: 1.8rem;
+        line-height: 1;
+    }
+
+    .summary-list .underline-cyan {
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgba(13, 202, 240, 0.4);
+}
+}
