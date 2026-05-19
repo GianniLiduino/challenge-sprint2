@@ -14,12 +14,14 @@
 
 <body class="d-lg-flex">
 
-    <div class="d-lg-none w-100 bg-light p-3 d-flex align-items-center justify-content-between border-bottom sticky-top">
+    <div
+        class="d-lg-none w-100 bg-light p-3 d-flex align-items-center justify-content-between border-bottom sticky-top">
         <div class="d-flex align-items-center gap-2">
             <i class="bi bi-heart-pulse-fill" style="font-size: 1.5rem; color: var(--main-cyan);"></i>
             <span class="fw-bold text-uppercase" style="font-size: 0.8rem; color: #1a567a;">Care Plus Conecta</span>
         </div>
-        <button class="btn border-0 text-cyan" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarOffcanvas">
+        <button class="btn border-0 text-cyan" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#sidebarOffcanvas">
             <i class="bi bi-list fs-2"></i>
         </button>
     </div>
@@ -27,12 +29,13 @@
     <aside class="offcanvas-lg offcanvas-start sidebar" tabindex="-1" id="sidebarOffcanvas">
         <div class="offcanvas-header d-lg-none">
             <h5 class="offcanvas-title text-cyan fw-bold">MENU</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#sidebarOffcanvas"></button>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                data-bs-target="#sidebarOffcanvas"></button>
         </div>
-        
+
         <div class="logo-container d-none d-lg-block">
             <div class="mb-2">
-                <i class="bi bi-heart-pulse-fill" style="font-size: 3rem; color: var(--main-cyan);"></i>
+                <i class="bi bi-heart-pulse-fill display-5 text-cyan"></i>
             </div>
             <div class="logo-text text-uppercase">
                 Care Plus<br>Conecta
@@ -43,7 +46,6 @@
             <a href="index.html" class="nav-link">
                 <i class="bi bi-house-door"></i> Início
             </a>
-            
             <a href="consultas.html" class="nav-link">
                 <i class="bi bi-calendar-check"></i> Minhas consultas
             </a>
@@ -65,9 +67,6 @@
             <a href="notificacoes.html" class="nav-link">
                 <i class="bi bi-bell"></i> Notificações
             </a>
-            <a href="#" class="nav-link">
-                <i class="bi bi-gear"></i> Configurações
-            </a>
             <a href="habitos-ativos.html" class="nav-link">
                 <i class="bi bi-activity"></i> Hábitos Ativos
             </a>
@@ -82,14 +81,14 @@
     <div class="main-content-wrapper shadow-sm">
         <header class="d-flex flex-column flex-md-row align-items-md-center gap-3">
             <h1 class="mb-0 text-cyan fw-bold">Lista de espera</h1>
-            
+
             <div class="ms-md-auto d-flex align-items-center justify-content-between w-100 w-md-auto">
                 <div class="header-icons me-md-4">
                     <i class="bi bi-bell"></i>
                     <i class="bi bi-gear"></i>
                     <i class="bi bi-search"></i>
                 </div>
-                
+
                 <div class="user-profile">
                     <div class="user-info">
                         <span class="user-name">Manuela Góis</span>
@@ -101,12 +100,12 @@
         </header>
 
         <main class="dashboard-container pt-3">
-            
+
             <div class="waitlist-banner px-3 py-4 mb-5">
                 <p class="text-center fw-bold text-dark mb-4">
                     Você está na fila de espera para agendar sua consulta com o Dr. Flávio Nappi Chaves, Dermatologista.
                 </p>
-                
+
                 <div class="row align-items-center justify-content-center g-4">
                     <div class="col-md-5">
                         <div class="status-box p-3 bg-transparent">
@@ -117,19 +116,22 @@
                                 <i class="bi bi-clock"></i> <span class="fw-bold">Tempo estimado: 2-5 dias</span>
                             </div>
                             <div class="d-flex align-items-center gap-2">
-                                <i class="bi bi-graph-up-arrow"></i> <span class="fw-bold">Você subiu duas posições esta semana!</span>
+                                <i class="bi bi-graph-up-arrow"></i> <span class="fw-bold">Você subiu duas posições esta
+                                    semana!</span>
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="col-md-5 d-flex flex-column align-items-center text-center">
                         <div class="d-flex align-items-start gap-3 mb-3">
                             <i class="bi bi-bell-fill fs-4 text-warning"></i>
                             <p class="fw-bold text-dark mb-0 text-start" style="font-size: 0.95rem;">
-                                Você receberá uma notificação quando uma vaga surgir e terá 15 minutos para confirmar via FLASH ACCEPT!
+                                Você receberá uma notificação quando uma vaga surgir e terá 15 minutos para confirmar
+                                via FLASH ACCEPT!
                             </p>
                         </div>
-                        <button class="btn btn-cyan rounded-pill px-4 py-2 fw-bold text-white shadow-sm mt-2">Sair da fila</button>
+                        <button class="btn btn-cyan rounded-pill px-4 py-2 fw-bold text-white shadow-sm mt-2">Sair da
+                            fila</button>
                     </div>
                 </div>
             </div>
@@ -138,7 +140,9 @@
                 <h5 class="text-cyan fw-bold mb-3 text-start">Minhas preferências de espera</h5>
 
                 <div class="text-center mb-4">
-                    <button class="btn btn-cyan rounded-pill w-100 py-2 fw-bold text-white shadow-sm d-flex justify-content-center align-items-center gap-2" style="max-width: 450px; margin: 0 auto;">
+                    <button
+                        class="btn btn-cyan rounded-pill w-100 py-2 fw-bold text-white shadow-sm d-flex justify-content-center align-items-center gap-2"
+                        style="max-width: 450px; margin: 0 auto;">
                         <i class="bi bi-search"></i> Buscar por nome do médico ou especialidade
                     </button>
                 </div>
@@ -147,13 +151,16 @@
                 <div class="d-flex flex-wrap gap-3 justify-content-center mb-4">
                     <button class="btn btn-cyan rounded-pill px-4 fw-bold">Paulista</button>
                     <button class="btn btn-cyan rounded-pill px-4 fw-bold">Vila Olímpia</button>
-                    <button class="btn btn-outline-secondary rounded-pill px-4 fw-bold text-dark outline-btn">Morumbi</button>
-                    <button class="btn btn-outline-secondary rounded-pill px-4 fw-bold text-dark outline-btn">Campo Belo</button>
-                    <button class="btn btn-outline-secondary rounded-pill px-4 fw-bold text-dark outline-btn">Alphaville</button>
+                    <button
+                        class="btn btn-outline-secondary rounded-pill px-4 fw-bold text-dark outline-btn">Morumbi</button>
+                    <button class="btn btn-outline-secondary rounded-pill px-4 fw-bold text-dark outline-btn">Campo
+                        Belo</button>
+                    <button
+                        class="btn btn-outline-secondary rounded-pill px-4 fw-bold text-dark outline-btn">Alphaville</button>
                 </div>
 
                 <h6 class="text-cyan fw-bold mb-3 text-start mt-4">Dias e horários preferenciais</h6>
-                
+
                 <div class="d-flex flex-wrap justify-content-center gap-4 mb-3 custom-checkboxes">
                     <label class="form-check-label d-flex align-items-center gap-2 fw-bold text-cyan">
                         <input class="form-check-input" type="checkbox" checked> Segunda
@@ -185,7 +192,8 @@
                 </div>
 
                 <div class="text-center mt-5 mb-5">
-                    <button class="btn btn-cyan rounded-pill px-5 py-2 fw-bold text-white fs-6 shadow-sm">Salvar preferências</button>
+                    <button class="btn btn-cyan rounded-pill px-5 py-2 fw-bold text-white fs-6 shadow-sm">Salvar
+                        preferências</button>
                 </div>
             </div>
 
